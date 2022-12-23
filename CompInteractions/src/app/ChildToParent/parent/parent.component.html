@@ -1,0 +1,17 @@
+<p>parent works!</p>
+
+
+<table>
+    <tr>
+        <th>Cricket Team Name</th>
+        <th> Player Name</th>
+    </tr>
+    <tr> 
+        <app-child1
+        *ngFor="let c of crketTms"
+        [CricketTeams]="c"
+        [PlayerName]="playerName" >
+        </app-child1>
+   </tr>
+</table>
+

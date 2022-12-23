@@ -1,0 +1,8 @@
+<h2>Answer to below Question?</h2>
+    <h3>Agree: {{agreed}}, Disagree: {{disagreed}}</h3>
+
+    <app-child2
+      *ngFor="let v of voters"
+      [name]="v"
+      (voted)="onVoted($event)">
+    </app-child2>
